@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="${titulo}"></title>
+</head>
+<body>
+    <h1 th:text="${titulo}"></h1>
+
+    <span th:text="${usuario.getNombre()}"></span>
+    <span th:text="${usuario.getApellido()}"></span><br>
+    <span th:if="${usuario.getEmail()}" th:text="${usuario.getEmail()}"></span>
+    <span th:if="${usuario.getEmail() == null}" th:text="'Correo no valido'"></span>
+    <span th:if="${usuario.getEmail() == null}">Correo no es valido</span>
+
+</body>
+</html>

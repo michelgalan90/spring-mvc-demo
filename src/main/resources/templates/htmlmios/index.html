@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Pasando argumento del agua</title>
+</head>
+<body>
+<h1>Pasando argumentos del agua</h1>
+
+<a th:href="@{/agua/dulce(agua='esta es el agua de coco')}">pasar argumento</a><br>
+<a th:href="@{/agua/salada(palabra='el agua salada es del mar', numero=25)}">pasar dos argumento</a><br>
+<a th:href="@{/agua/poderosa/pasando un parametro poderoso xD}">pasar usando @PathVariable jeje</a><br>
+<a th:href="@{/agua/httpservlet(nombre='Pollito', apellido='Asesino')}">Recibir parametros con HttpServletRequest</a><br>
+
+</body>
+</html>
